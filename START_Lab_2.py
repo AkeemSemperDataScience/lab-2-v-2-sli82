@@ -64,12 +64,7 @@ def lab2Question5():
     def Create_Password(input):
         if len(input) < 8:
             print("Enter a password")
-        if input 
-            print("Enter a password")
-        if 
-            print("Enter a password")
-        if 
-            print("Enter a password")
+
         else:
             isValidPassword(input)
 
