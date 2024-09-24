@@ -2,23 +2,49 @@ def lab2Question1(word):
     # Note - you'll need to change the signature (above) to match the arguments for this lab...
     # Create a function that takes in a string 
     # Return True if that string is a palindrome, False otherwise
+    def isPalindrome(word):
+        for i in range (0, int(len(word)/2)):
+            if word[i] != word[len(word)-i-1]:
+                return False
+        return True
     pass
 
 def lab2Question2(number_val):
     # Create a function that takes in a number
     # Return a list of the fibonacci sequence up to that number
+    def fibonacci_seq(number_val):
+        a = 0
+        b = 1
+        c = b
+        
+        while a <= number_val:
+            print(a)
+            a += 1
+            a, b = b, c
+            c = a + b
+    return fibonacci_seq(number_val)
     pass
 
 def lab2Question3(str1, str2):
     # Create a function that takes in two strings - str1 and str2
     # Return the number of times str2 appears in str1
     # For example if str1 = "coding is cool" and str2 = "co" then output should be 2.
+    def repeating_strings(str1, str2):
+        print(str1.count)
     pass
 
 def lab2Question4(list1, list2):
     # Create a function that takes in two equal length list of numbers. 
     # Return a list of the element-wise sum of the two lists - i.e. the first element of the output list is the sum of the first elements of the input lists
     # If the condition of the function is not satisfied, return a blank list
+    def sum_list(list1, list2):
+        if len(list1) == len(list2):
+            i = 0
+            while i <= len(list1)-1:
+                print(list1[i] + list2[i])
+                i += 1
+        else:
+            return[]
     pass
 
     return sum_list
@@ -35,6 +61,17 @@ def lab2Question5():
     # that takes in a password and returns True if the password is valid, False otherwise.
     # You will need to make that function, exactly as described above. 
     password = None
+    def Create_Password(input):
+        if len(input) < 8:
+            print("Enter a password")
+        if input 
+            print("Enter a password")
+        if 
+            print("Enter a password")
+        if 
+            print("Enter a password")
+        else:
+            isValidPassword(input)
 
     return password
 
@@ -44,5 +81,10 @@ def isValidPassword(password):
     # - Contains at least one uppercase letter
     # - Contains at least one lowercase letter
     # - Contains at least one number
+    def isValidPassword(input):
+        if input == password:
+            return True
+        else:
+            return False
     pass
 
