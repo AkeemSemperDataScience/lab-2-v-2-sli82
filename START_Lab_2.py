@@ -6,7 +6,6 @@ def lab2Question1(word):
         if word[i] != word[len(word)-i-1]:
             return False
     return True
-    
 
 def lab2Question2(number_val):
     # Create a function that takes in a number
@@ -20,8 +19,6 @@ def lab2Question2(number_val):
         a += 1
         a, b = b, c
         c = a + b
-return fibonacci_seq
-    
 
 def lab2Question3(str1, str2):
     # Create a function that takes in two strings - str1 and str2
@@ -57,13 +54,13 @@ def lab2Question5():
     # that takes in a password and returns True if the password is valid, False otherwise.
     # You will need to make that function, exactly as described above. 
     password = None
-    if len(input) < 8:
-        print("Enter a password")
+        if len(input) < 8:
+            print("Enter a password")
 
-    else:
-        isValidPassword(input)
+        else:
+            isValidPassword(input)
 
-return password
+    return password
 
 def isValidPassword(password):
     # Create a function that takes in a password and returns True if the password is valid, False otherwise
@@ -71,9 +68,10 @@ def isValidPassword(password):
     # - Contains at least one uppercase letter
     # - Contains at least one lowercase letter
     # - Contains at least one number
-    if input == password:
-        return True
-    else:
-        return False
-    
+    def isValidPassword(input):
+        if input == password:
+            return True
+        else:
+            return False
+    pass
 
