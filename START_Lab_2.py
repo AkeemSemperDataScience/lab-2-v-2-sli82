@@ -10,6 +10,7 @@ def lab2Question1(word):
 def lab2Question2(number_val):
     # Create a function that takes in a number
     # Return a list of the fibonacci sequence up to that number
+    number_val = None
     a = 0
     b = 1
     c = b
@@ -19,6 +20,7 @@ def lab2Question2(number_val):
         a += 1
         a, b = b, c
         c = a + b
+    return number_val
 
 def lab2Question3(str1, str2):
     # Create a function that takes in two strings - str1 and str2
@@ -26,7 +28,6 @@ def lab2Question3(str1, str2):
     # For example if str1 = "coding is cool" and str2 = "co" then output should be 2.
     print(str1.count)
     
-
 def lab2Question4(list1, list2):
     # Create a function that takes in two equal length list of numbers. 
     # Return a list of the element-wise sum of the two lists - i.e. the first element of the output list is the sum of the first elements of the input lists
