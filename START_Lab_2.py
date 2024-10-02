@@ -20,7 +20,7 @@ def lab2Question2(number_val):
         a += 1
         a, b = b, c
         c = a + b
-return fibonacci_seq(number_val)
+return fibonacci_seq
     
 
 def lab2Question3(str1, str2):
