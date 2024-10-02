@@ -2,31 +2,32 @@ def lab2Question1(word):
     # Note - you'll need to change the signature (above) to match the arguments for this lab...
     # Create a function that takes in a string 
     # Return True if that string is a palindrome, False otherwise
-    for i in range (0, int(len(word)/2)):
-        if word[i] != word[len(word)-i-1]:
-            return False
-    return True
+    isPalindrome = False
+    if word == word[::-1]:
+        isPalindrome = True
+    return isPalindrome
 
 def lab2Question2(number_val):
     # Create a function that takes in a number
     # Return a list of the fibonacci sequence up to that number
-    number_val = None
+    fibonacci_seq = None
     a = 0
     b = 1
     c = b
     
-    while a <= number_val:
-        print(a)
-        a += 1
+    while b <= number_val:
+        print(b)
+        a += b
         a, b = b, c
         c = a + b
-    return number_val
+    return fibonacci_seq
 
 def lab2Question3(str1, str2):
     # Create a function that takes in two strings - str1 and str2
     # Return the number of times str2 appears in str1
     # For example if str1 = "coding is cool" and str2 = "co" then output should be 2.
-    print(str1.count)
+    print(str1.count(str2))
+    
     
 def lab2Question4(list1, list2):
     # Create a function that takes in two equal length list of numbers. 
@@ -39,7 +40,7 @@ def lab2Question4(list1, list2):
             i += 1
     else:
         return[]
-pass
+
 
 return sum_list
 
@@ -74,5 +75,5 @@ def isValidPassword(password):
             return True
         else:
             return False
-    pass
+
 
