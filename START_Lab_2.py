@@ -45,7 +45,7 @@ def lab2Question4(list1, list2):
 
 print(lab2Question4([1, 2, 3], [1, 2, 3]))
 
-def lab2Question5():
+def lab2Question5(input):
     # Create a function* that asks a user to enter a password that meets the following criteria:
     # - At least 8 characters long
     # - Contains at least one uppercase letter
@@ -56,15 +56,20 @@ def lab2Question5():
     # *Note: This function should call another function, called isValidPassword(password), 
     # that takes in a password and returns True if the password is valid, False otherwise.
     # You will need to make that function, exactly as described above. 
-    if len(input()) < 8:
+    if len(input) < 8:
         return "Enter a password"
-    for char in input():
-    elif char.password:
-        
+    elif not any (char.isupper() for char in input):
+        return "Enter a password"
+    elif not any (char.islower() for char in input):
+        return "Enter a password"
+    elif not any (char.isdigit() for char in input):
+        return "Enter a password"
     else:
         isValidPassword(input)
 
-    return password
+    return input
+
+print(lab2Question5('Abcd1234'))
 
 def isValidPassword(password):
     # Create a function that takes in a password and returns True if the password is valid, False otherwise
