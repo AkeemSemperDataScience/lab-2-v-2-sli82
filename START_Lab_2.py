@@ -6,7 +6,7 @@ def lab2Question1(word):
         return True
     return False
 
-#print(lab2Question1("racecar"))
+print(lab2Question1("racecar"))
 
 def lab2Question2(number_val):
     # Create a function that takes in a number
@@ -15,14 +15,14 @@ def lab2Question2(number_val):
     b = 1
     c = b
     
-    while b <= number_val:
-        print(a)
+    while c <= number_val:
+        print(b)
         a += b
         a, b = b, c
         c = a + b
-    return a
+    return b
 
-#print(lab2Question2(13))
+print(lab2Question2(13))
 
 def lab2Question3(str1, str2):
     # Create a function that takes in two strings - str1 and str2
@@ -31,7 +31,7 @@ def lab2Question3(str1, str2):
     num_of_times = (str1.count(str2))
     return num_of_times
     
-#print(lab2Question3("sally sale: salt", "sa"))
+print(lab2Question3("sally sale: salt", "sa"))
     
 def lab2Question4(list1, list2):
     # Create a function that takes in two equal length list of numbers. 
@@ -43,7 +43,7 @@ def lab2Question4(list1, list2):
         return[]
     return sum_list
 
-#print(lab2Question4([1, 2, 3], [1, 2, 3]))
+print(lab2Question4([1, 2, 3], [1, 2, 3]))
 
 def lab2Question5(input):
     # Create a function* that asks a user to enter a password that meets the following criteria:
