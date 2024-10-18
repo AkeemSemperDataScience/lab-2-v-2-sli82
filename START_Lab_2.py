@@ -65,7 +65,11 @@ def lab2Question5(input):
     elif not any (char.isdigit() for char in input):
         return "Enter a password"
     else:
-        isValidPassword(input)
+        def isValidPassword(input):
+            if input == password:
+                return True
+            else:
+                return False
 
     return input
 
