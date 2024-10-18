@@ -11,27 +11,32 @@ print(lab2Question1("racecar"))
 def lab2Question2(number_val):
     # Create a function that takes in a number
     # Return a list of the fibonacci sequence up to that number
+    if number_val < 0:
+        return False
+
     a = 0
     b = 1
     c = b
     
-    while c <= number_val:
-        print(b)
+    while b <= number_val:
+        print(a)
         a += b
         a, b = b, c
         c = a + b
-    return b
+    return a
 
-print(lab2Question2(13))
+print(lab2Question2(12))
 
 def lab2Question3(str1, str2):
     # Create a function that takes in two strings - str1 and str2
     # Return the number of times str2 appears in str1
     # For example if str1 = "coding is cool" and str2 = "co" then output should be 2.
-    num_of_times = (str1.count(str2))
+    string1 = str1.lower()
+    string2 = str2.lower()
+    num_of_times = (string1.count(string2))
     return num_of_times
     
-print(lab2Question3("sally sale: salt", "sa"))
+print(lab2Question3("Superstitious and superfluous", "super"))
     
 def lab2Question4(list1, list2):
     # Create a function that takes in two equal length list of numbers. 
@@ -66,14 +71,14 @@ def lab2Question5(input):
         return "Enter a password"
     else:
         def isValidPassword(input):
-            if input == password:
+            if input == input:
                 return True
             else:
                 return False
 
-    return input
+        return input
 
-print(lab2Question5('Abcd1234'))
+print(lab2Question5('Password1'))
 
 def isValidPassword(password):
     # Create a function that takes in a password and returns True if the password is valid, False otherwise
